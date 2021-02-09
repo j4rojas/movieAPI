@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Movie Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+
+    </head>
+    <body>
+        <header role="banner">
+            <h1>Movie Search</h1>
+            <p>Locate your film</p>
+        </header>
+        <main role="main">
+            <section class="container">
+                <form id="form">
+                    <div class="searchForm">
+                        <label for="Movie-Topic">Movie title</label>
+                        <input type="text" name="movieTitle" id="inputSearch" class="userSearch" placeholder="Harry Potter" aria-controls="topic">
+                    </div>
+                    <button type="submit" id ="submitButton">Search</button>
+                </form>
+            </section>
+            
+            <div id="searchList" aria-live="polite"> 
+            </div> 
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
+
