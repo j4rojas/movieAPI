@@ -142,12 +142,21 @@ img:hover {
     }    
 
     button {
-        font-size: 50px;
+        font-size: 40px;
+        margin-top:2%;
     }
 
     .userSearch {
         height: 80px;
         font-size: 50px;
+    }
+
+    .noResults img {
+        width:50%;
+    }
+    .noResults_text {
+        margin-left: 10%;
+        font-size: 200%;
     }
 
 }
@@ -168,15 +177,55 @@ img:hover {
         height:390px;
         margin-top:5%;
     }
+    .noResults img {
+        width: 40%;
+    }
 
 }
 
 @media only screen and (max-width:1365px) {
+    .userSearch {
+        height:50px;
+        font-size:35px;
+    }
+
+    button {
+        font-size:30px;
+        margin-top:0%;
+    }
+
+    img{
+        width:22%;
+        height:390px;
+        margin-top:5%;
+    }
+    .noResults img {
+        width: 40%;
+    }
+
 
 }
 
-
 @media only screen and (max-width:1520px) {
+    .userSearch {
+        height:50px;
+        font-size:35px;
+    }
+
+    button {
+        font-size:30px;
+        margin-top:0%;
+    }
+
+    img{
+        width:22%;
+        height:390px;
+        margin-top:5%;
+    }
+    .noResults img {
+        width: 40%;
+    }
+
 
 }
 
