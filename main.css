@@ -1,7 +1,10 @@
 body {
     background-color: black;
     color: white;
-    text-align: center;
+}
+
+.container {
+    text-align:center;
 }
 
 header {
@@ -104,8 +107,8 @@ img:hover {
 /* iPad */
 @media (min-width: 768px) {
     img {
-        width: 50%;
-        height: 55%;
+        width: 27%;
+        height: 300px;
         margin: auto;
         margin-top:10%;
         border: white solid 1.5px;
@@ -113,6 +116,11 @@ img:hover {
 
     button {
         font-size: 22px;
+    }
+
+    #searchList {
+        display:flex;
+        flex-wrap:wrap;
     }
 
 }
