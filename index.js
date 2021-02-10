@@ -17,7 +17,8 @@ function moiveContainer(movies) {
             $('#searchList').append(
                 `<img
                     src="images/dog.jpg" class="noImage" movieID=${movie.id}
-                />`)
+                />
+            `)
         }
     });
 }
@@ -39,21 +40,10 @@ function array (total) {
 }
 
 function listMovies(movies) {
-    // const movieElement = document.createElement('div');
-    // movieElement.setAttribute('class','movie');
-    
-    // const movieOutput = `
-    //     <section class="movieSection">
-    //     ${moiveContainer(movies)}
-    //     </section>
-    //     <div class = "information">
-    //     </div>
-    // `;
     const movieOutput = moiveContainer(movies); //called this function instead of code above
     movieElement.innerHTML = movieOutput;
     return movieElement;
 }
-
 
 function callFunction (myJson) {
     const movies = myJson.results;
@@ -61,6 +51,7 @@ function callFunction (myJson) {
     const arrayTotal = array(total);
     const movieBox = listMovies(movies);
     searchList.appendChild(movieBox);
+    const title = myJson.results.title;
 }
 
 function clearResults(){
@@ -85,18 +76,9 @@ submitButton.onclick = function (event) {
   
     fetch(updateURL)
         .then((res) => res.json ())
-        .then(callFunction) 
+        .then(callFunction)
         .catch((error) => {
             console.log('Error: ', error);
         });
 } 
 
-document.onclick = function (event) {
-    const target = event.target;
-    if (target.tagName.toLowerCase() === "img") {
-        console.log('event:', event);
-        const movieSection = event.target.parentElement;
-        const information = movieSection.nextElementSibling;
-        information.classList.toggle('displayInformation');
-    }
-}
