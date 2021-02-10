@@ -1,18 +1,38 @@
 body {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 header {
     text-align:center;
+    font-size: 25px;
+}
+
+header p {
+    color: #01b4e4;
 }
 
 .searchForm {
     margin-bottom: 2%;
 }
 
+button {
+    border-radius: 10%;
+    border: #0d253f solid 4px;
+    padding: 8px 25px;
+}
 .userSearch {
     width:80%;
+    height: 40px;
+    text-align:center;
+    font-size: 25px;
+
+}
+
+button {
+    background-color:#90cea1;
+    margin-top: 5%;
 }
 
 .movieSection{
@@ -33,18 +53,22 @@ img {
 
 img:hover {
     margin: 15px 15px;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
 .noImage {
-    margin-right:1%;
+    margin-right: auto;
   }
 .noImage img {
     width: 215px;
 }
 
 .noResults {
-    text-align:center;
+    text-align:left;
+}
+
+.noResults_text {
+    margin-left:7%;
 }
 
 .noResults img {
@@ -61,6 +85,35 @@ img:hover {
     display:block;
 }
 
-@media (min-width) {
-    
+/* Moto G4 & Galaxy S5 */
+@media (min-width: 320px) {
+    img {
+        width: 80%;
+        height: 55%;
+        margin: auto;
+        margin-top:10%;
+        border: white solid 1.5px;
+        display:block;
+    }    
+
+    button {
+        font-size: 22px;
+    }
 }
+
+/* iPad */
+@media (min-width: 768px) {
+    img {
+        width: 50%;
+        height: 55%;
+        margin: auto;
+        margin-top:10%;
+        border: white solid 1.5px;
+    }    
+
+    button {
+        font-size: 22px;
+    }
+
+}
+
