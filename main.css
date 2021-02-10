@@ -183,7 +183,7 @@ img:hover {
 
 }
 
-@media only screen and (max-width:1365px) {
+@media only screen and (min-width:1365px) {
     .userSearch {
         height:50px;
         font-size:35px;
@@ -196,17 +196,18 @@ img:hover {
 
     img{
         width:22%;
-        height:390px;
+        height:450px;
         margin-top:5%;
     }
     .noResults img {
         width: 40%;
+        height:55%;
     }
 
 
 }
 
-@media only screen and (max-width:1520px) {
+@media only screen and (min-width:1520px) {
     .userSearch {
         height:50px;
         font-size:35px;
@@ -219,11 +220,12 @@ img:hover {
 
     img{
         width:22%;
-        height:390px;
+        height:505px;
         margin-top:5%;
     }
     .noResults img {
-        width: 40%;
+        height: 70%;
+        width: 45%;
     }
 
 
