@@ -9,7 +9,8 @@ function moiveContainer(movies) {
     return movies.map((movie) => {
         if (movie.poster_path) {
             return `
-                <img src=${imageURL + movie.poster_path} movieID=${movie.id} class="movieImage"/>
+                <img src=${imageURL + movie.poster_path} movieID=${movie.id} class="movieImage"
+            />
             `;
         }
         else {
@@ -87,15 +88,13 @@ submitButton.onclick = function (event) {
         });
 } 
 
-// document.onclick = function (event) {
-//     const target = event.target;
-//     if (target.tagName.toLowerCase() === "img") {
-//         console.log('event:' event);
-//         const imageId = target.dataset.movieId;
-//         console.log(imageId);
-//         const movieSection = event.target.parentElement;
-//         const information = movieSection.nextElementSibling;
-//         information.classList.toggle('displayInformation');
-//     }
-// }
+document.onclick = function (event) {
+    const target = event.target;
+    if (target.tagName.toLowerCase() === "img") {
+        console.log('event:', event);
+        const movieSection = event.target.parentElement;
+        const information = movieSection.nextElementSibling;
+        information.classList.toggle('displayInformation');
+    }
+}
 
