@@ -99,6 +99,70 @@ img {
     display:block;
 }
 
+/* online template was used for this portion of the project to create the title section - JasmineRojas*/
+.mainTitle {
+    margin-top: 5%;
+    background: #CA4246;
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #90cea1  16.666%, 
+      #90cea1  33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #01b4e4 50%, 
+      #01b4e4 66.666%, 
+      #0d253f 66.666%, 
+      #0d253f 83.333%, 
+      #A7489B 83.333%);
+    
+    background-size: 57%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    animation: mainTitle-animation-rev 0.5s ease forwards;
+  
+    cursor: pointer;
+  }
+  
+  .mainTitle:hover {
+    animation: mainTitle-animation 0.5s ease forwards;
+  }
+
+  @keyframes mainTitle-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+  }
+  
+  @keyframes mainTitle-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }
+
+/*media queries */
+
 /* Moto G4 & Galaxy S5 */
 @media (min-width: 320px) {
     img {
@@ -117,11 +181,10 @@ img {
     .logo {
         margin-right: 2%;
         text-align: none;
-        margin-top: -34%;
+        margin-top: -49%;
         width: 10%;
         margin-left: 85%;
         height: 6%;
-        position: fixed;
     }
 }
 
@@ -138,6 +201,9 @@ img {
         margin-top:10%;
         border: white solid 1.5px;
     }    
+    .noResults img {
+        width:45%;
+    }
 
     button {
         font-size: 35px;
@@ -153,14 +219,46 @@ img {
         font-size:35px;
     }
     .logo {
-        margin-top: -13%;
+        margin-top: -41%;
         width: 12%;
         margin-left: 83%;
         height: 9%;
     }
+    .noResults img {
+        width: 40%;
+    }
+
+    h1 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 800;
+        font-size: 5em;
+        width: 5em;
+        line-height: 0.9em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5em;
+        margin-top: calc(50vh - 1em);
+      }
 
 }
 
+@media (min-width:825px) {
+    .logo {
+        margin-top: -39%;
+        width: 10%;
+        margin-left: 84%;
+        height: 11%;
+    }
+}
+
+@media (min-width:975px) {
+    .logo { 
+        margin-top: -33%;
+        width: 10%;
+        margin-left: 84%;
+        height: 13%;
+    }
+}
 /* iPad Pro */
 @media (min-width: 1024px) {
     img {
@@ -186,7 +284,7 @@ img {
         font-size: 200%;
     }
     .logo {
-        margin-top: -10%;
+        margin-top: -31%;
     }
 
 }
@@ -212,9 +310,15 @@ img {
     }
     .logo {
         width:10%;
-        height:15%;
+        height:13%;
     }
 
+}
+
+@media only screen and (min-width:1200px) {
+    .logo {
+        margin-top: -26%;
+    }
 }
 
 @media only screen and (min-width:1365px) {
@@ -238,10 +342,17 @@ img {
         height:55%;
     }
     .logo {
-        margin-top: -7%;
-        width: 8%;
-        height: 10%;
-        margin-left: 88%;
+        margin-top: -24%;
+        width: 11%;
+        height: 13%;
+        margin-left: 84%;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .logo {
+        width: 9%;
+        margin-left: 82%;
     }
 }
 
@@ -266,14 +377,9 @@ img {
         width: 45%;
     }
     .logo {
-        margin-top: -6%;
-        width: 7%;
-        height: 11%;
-        margin-left: 89%;
+        margin-top: -22%;
+        width: 10%;
+        height: 12%;
+        margin-left: 85%;
     }
 }
-
-
-
-
-
