@@ -28,8 +28,8 @@ function array (total) {
         $('#searchList').append(`
             <div class="noResults">
                 <div class="noResults_text">
-                    <h1>Sorry</h1>
-                    <h2>No movies were found</h2>
+                    <h2>Sorry</h2>
+                    <h3>No movies were found</h3>
                     <p>Try a different search</p>
                 </div>
                 <img src="images/husky.jpg"/>
