@@ -11,7 +11,7 @@ function moiveContainer(movies) {
             $('#searchList').append(
                 `<img 
                     src=${imageURL + movie.poster_path} movieID=${movie.id} class="movieImage"
-                />`)
+            />`)
         }
         else {
             $('#searchList').append(
@@ -39,15 +39,17 @@ function array (total) {
 }
 
 function listMovies(movies) {
-    const movieElement = document.createElement('div');
-    movieElement.setAttribute('class','movie');
+    // const movieElement = document.createElement('div');
+    // movieElement.setAttribute('class','movie');
     
-    const movieOutput = 
-    `<section class="movieSection">${moiveContainer(movies)}</section>
-    <div class = "information">
-    </div>
-    `;
-    
+    // const movieOutput = `
+    //     <section class="movieSection">
+    //     ${moiveContainer(movies)}
+    //     </section>
+    //     <div class = "information">
+    //     </div>
+    // `;
+    const movieOutput = moiveContainer(movies);
     movieElement.innerHTML = movieOutput;
     return movieElement;
 }
