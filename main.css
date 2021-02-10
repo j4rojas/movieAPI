@@ -12,6 +12,17 @@ header {
     font-size: 25px;
 }
 
+.logo {
+    border: none;
+    margin-right: 2%;
+    text-align: none;
+    margin-top: -7%;
+    width: 7%;
+    margin-left: 87%;
+    height: 11%;
+    position: absolute;
+}
+
 header p {
     color: #01b4e4;
 }
@@ -54,7 +65,7 @@ img {
     border: white solid 1.5px;
 }
 
-img:hover {
+.movieImage:hover {
     margin: 15px 15px;
     transform: scale(1);
 }
@@ -102,6 +113,16 @@ img:hover {
     button {
         font-size: 22px;
     }
+
+    .logo {
+        margin-right: 2%;
+        text-align: none;
+        margin-top: -34%;
+        width: 10%;
+        margin-left: 85%;
+        height: 6%;
+        position: fixed;
+    }
 }
 
 /* iPad */
@@ -131,6 +152,12 @@ img:hover {
         height: 60px;
         font-size:35px;
     }
+    .logo {
+        margin-top: -13%;
+        width: 12%;
+        margin-left: 83%;
+        height: 9%;
+    }
 
 }
 
@@ -158,6 +185,9 @@ img:hover {
         margin-left: 10%;
         font-size: 200%;
     }
+    .logo {
+        margin-top: -10%;
+    }
 
 }
 
@@ -179,6 +209,10 @@ img:hover {
     }
     .noResults img {
         width: 40%;
+    }
+    .logo {
+        width:10%;
+        height:15%;
     }
 
 }
@@ -203,8 +237,12 @@ img:hover {
         width: 40%;
         height:55%;
     }
-
-
+    .logo {
+        margin-top: -7%;
+        width: 8%;
+        height: 10%;
+        margin-left: 88%;
+    }
 }
 
 @media only screen and (min-width:1520px) {
@@ -227,8 +265,12 @@ img:hover {
         height: 70%;
         width: 45%;
     }
-
-
+    .logo {
+        margin-top: -6%;
+        width: 7%;
+        height: 11%;
+        margin-left: 89%;
+    }
 }
 
 

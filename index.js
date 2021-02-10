@@ -49,7 +49,7 @@ function listMovies(movies) {
     //     <div class = "information">
     //     </div>
     // `;
-    const movieOutput = moiveContainer(movies);
+    const movieOutput = moiveContainer(movies); //called this function instead of code above
     movieElement.innerHTML = movieOutput;
     return movieElement;
 }
@@ -99,7 +99,4 @@ document.onclick = function (event) {
         const information = movieSection.nextElementSibling;
         information.classList.toggle('displayInformation');
     }
-} //might want to remove
-
-//why {movie.id}
-
+}
