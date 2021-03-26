@@ -3,6 +3,12 @@ body {
     color: white;
 }
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    position:relative;
+}
+
 .container {
     text-align:center;
 }
@@ -35,6 +41,8 @@ button {
     border-radius: 10%;
     border: #0d253f solid 4px;
     padding: 8px 25px;
+    background-color:#90cea1;
+    margin-top: 5%;
 }
 .userSearch {
     width:80%;
@@ -43,19 +51,6 @@ button {
     font-size: 25px;
 
 }
-
-button {
-    background-color:#90cea1;
-    margin-top: 5%;
-}
-
-/* .movieSection{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    overflow-x:auto;
-    margin-top: 5%;
-} */
 
 img {
     width: 280px;
@@ -70,11 +65,8 @@ img {
     transform: scale(1);
 }
 
-.noImage {
-    margin-right: auto;
-  }
-.noImage img {
-    width: 215px;
+.noImage { 
+   display:none;
 }
 
 .noResults {
@@ -101,6 +93,8 @@ img {
 
 /* online template was used for this portion of the project to create the title section - JasmineRojas*/
 .mainTitle {
+    text-align:center;
+    margin:auto;
     margin-top: 5%;
     background: #CA4246;
     background-color: #CA4246;
@@ -186,6 +180,12 @@ img {
         margin-left: 85%;
         height: 6%;
     }
+    
+    .link {
+        text-align: center;
+        font-size: 165%;
+    }
+    
 }
 
 /* iPad */
@@ -194,13 +194,16 @@ img {
     header {
         font-size: 150%;
     }
+    
     img {
         width: 27%;
         height: 300px;
-        margin: auto;
+        margin-right:5%;
         margin-top:10%;
         border: white solid 1.5px;
+        display: inline-block;
     }    
+
     .noResults img {
         width:45%;
     }
@@ -210,8 +213,7 @@ img {
     }
 
     #searchList {
-        display:flex;
-        flex-wrap:wrap;
+        margin-left: 6%;
     }
 
     .userSearch {
@@ -219,10 +221,11 @@ img {
         font-size:35px;
     }
     .logo {
-        margin-top: -41%;
-        width: 12%;
-        margin-left: 83%;
+        margin-top: -30%;
+        width: 10%;
+        margin-left: 33%;
         height: 9%;
+        position:absolute;
     }
     .noResults img {
         width: 40%;
@@ -244,26 +247,32 @@ img {
 
 @media (min-width:825px) {
     .logo {
-        margin-top: -39%;
-        width: 10%;
-        margin-left: 84%;
+        margin-top: -28%;
+        width: 9%;
+        margin-left: 37%;
         height: 11%;
+        position: absolute;
     }
 }
 
 @media (min-width:975px) {
     .logo { 
-        margin-top: -33%;
-        width: 10%;
-        margin-left: 84%;
+        margin-top: -25%;
+        width: 9%;
+        margin-left: 37%;
         height: 13%;
+        position: absolute;
+    }
+
+    img {
+        height: 335px;
     }
 }
 /* iPad Pro */
 @media (min-width: 1024px) {
     img {
-        width: 30%;
-        height: 460px;;
+        width: 25%;
+        height: 345px;;
     }    
 
     button {
@@ -284,7 +293,15 @@ img {
         font-size: 200%;
     }
     .logo {
-        margin-top: -31%;
+        margin-top: -23%;
+        width: 10%;
+        margin-left: 35%;
+        height: 8.5%;
+        position:absolute;
+    }
+
+    #searchList {
+        margin-left:12%;
     }
 
 }
@@ -301,24 +318,29 @@ img {
     }
 
     img{
-        width:22%;
-        height:390px;
-        margin-top:5%;
+        width: 19%;
+        height: 308px;
+        margin-top: 5%;
     }
     .noResults img {
         width: 40%;
     }
     .logo {
-        width:10%;
+        width:9%;
         height:13%;
+        margin-top: -21%;
+    }
+
+    #searchList {
+        margin-left: 6%;
     }
 
 }
 
 @media only screen and (min-width:1200px) {
-    .logo {
-        margin-top: -26%;
-    }
+   .logo {
+       margin-top: -20%;
+   }
 }
 
 @media only screen and (min-width:1365px) {
@@ -333,8 +355,7 @@ img {
     }
 
     img{
-        width:22%;
-        height:450px;
+        height:415px;
         margin-top:5%;
     }
     .noResults img {
@@ -342,17 +363,17 @@ img {
         height:55%;
     }
     .logo {
-        margin-top: -24%;
-        width: 11%;
-        height: 13%;
-        margin-left: 84%;
+        margin-top: -18%;
+    }
+
+    #searchList {
+        margin-left: 7.5%;
     }
 }
 
 @media only screen and (min-width:1440px) {
     .logo {
         width: 9%;
-        margin-left: 82%;
     }
 }
 
@@ -367,19 +388,11 @@ img {
         margin-top:0%;
     }
 
-    img{
-        width:22%;
-        height:505px;
-        margin-top:5%;
-    }
     .noResults img {
         height: 70%;
         width: 45%;
     }
     .logo {
-        margin-top: -22%;
-        width: 10%;
-        height: 12%;
-        margin-left: 85%;
+       margin-top: -15%;
     }
 }
