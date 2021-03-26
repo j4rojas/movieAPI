@@ -1,6 +1,7 @@
 const API_KEY = '55bfac27b96d87dd18b1628b21422751';
 const url = 'https://api.themoviedb.org/3/search/movie?api_key=55bfac27b96d87dd18b1628b21422751';
 const imageURL = 'https://image.tmdb.org/t/p/w500';
+const linkURL = 'https://www.themoviedb.org/movie/';
 
 const submitButton = document.querySelector('#submitButton');
 const searchList = document.querySelector('#searchList');
@@ -8,16 +9,20 @@ const searchList = document.querySelector('#searchList');
 function moiveContainer(movies) {
     return movies.map((movie) => {
         if (movie.poster_path) {
+
             $('#searchList').append(
-                `<img 
-                    src=${imageURL + movie.poster_path} movieID=${movie.id} class="movieImage"
-            />`)
+                `
+                <a href="${linkURL+ movie.id} + movieID=${movie.id}">
+                    <img src=${imageURL + movie.poster_path} movieID=${movie.id}" class="movieImage"> 
+                </a>
+            `)
         }
         else {
             $('#searchList').append(
-                `<img
-                    src="images/dog.jpg" class="noImage" movieID=${movie.id}
-                />
+                `
+                <a href="${linkURL+ movie.id} + movieID=${movie.id}">
+                    <img src="images/dog.jpg" class="noImage" movieID=${movie.id}/>
+                </a>
             `)
         }
     });
@@ -80,5 +85,4 @@ submitButton.onclick = function (event) {
         .catch((error) => {
             console.log('Error: ', error);
         });
-} 
-
+}  
